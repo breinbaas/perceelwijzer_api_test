@@ -1,8 +1,10 @@
 from cProfile import run
 import requests
+import streamlit as st
 
 
-from api_secrets import URL, AUTH_BEARER
+URL = st.secrets["URL"]
+AUTH_BEARER = st.secrets["AUTH_BEARER"]
 
 
 def run_query(query):

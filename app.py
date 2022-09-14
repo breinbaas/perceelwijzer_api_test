@@ -17,7 +17,7 @@ with col2:
 
 transformer = Transformer.from_crs(28992, 4326)
 lat, lon = transformer.transform(x, y)
-m = folium.Map(location=[lat, lon])
+m = folium.Map(location=[lat, lon], zoom_start=12)
 
 
 plots = get_plots_nearby(lat, lon)
